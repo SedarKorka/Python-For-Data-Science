@@ -90,3 +90,48 @@ print(Tuple_List[0])
 Sets = {"Mamadou", "Korka", "Mamadou"}
 print(Sets)
 print("Mamadou" in Sets)
+
+##Dictionary
+pandas_dk = {
+    "name":"korka",
+    "prenom":"Mamadou"
+}
+
+print(pandas_dk["name"])
+
+##control flow
+
+#with break
+for x in range(18):
+    #print(x)
+
+    if (x == 5):
+        break
+    else:
+        print(x)
+
+print("Hello Korka")
+
+##File Handling
+#create a file
+#file = open("text.txt","x")
+
+Wfile  = open("text.txt","w")
+
+Wfile.write("NameMamadou Korka")
+
+Wfile.close()
+
+Ofile = open("text.txt","r")
+print(Ofile.read())
+
+#append a text in the file
+Wfile = open("text.txt","a")
+Wfile.write("Happy")
+Wfile.close()
+
+Ofile = open("text.txt","r")
+print(Ofile.read())
+
+#List comprehensions
+
